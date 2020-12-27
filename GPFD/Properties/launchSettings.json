@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GPFD": {
+      "commandName": "Project",
+      "commandLineArgs": "\"d:\\dev\\ZTZ.temp\\data.txt\""
+    }
+  }
+}
