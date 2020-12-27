@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 
+/// <summary>
+/// Formatting input file
+/// Distance    Del
+/// 100     \t  300
+/// 200     \t  200
+/// 300     \t  100
+/// </summary>
 namespace GPFD
 {
     class Program
