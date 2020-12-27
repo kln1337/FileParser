@@ -54,7 +54,12 @@ namespace GPFD
 
         static void Main(string[] aArgs)
         {
-            if (aArgs != null && aArgs.Length > 0) GetData(aArgs[0], 1, "\t");
+            List<double> __list = new List<double>();
+            if (aArgs != null && aArgs.Length > 0) __list = GetData(aArgs[0], 0, "\t");
+            if (__list != null)
+            {
+                foreach (var __i in __list) Console.WriteLine(__i);
+            }
         }
     }
 }
