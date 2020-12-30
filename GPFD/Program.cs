@@ -104,7 +104,7 @@ namespace GPFD
                     foreach (var __i in __delta) Console.WriteLine(__i);
                 }
 
-                CalculateAB(__delta, __distance, out double A, out double B);
+                CalculateAB(__distance, __delta, out double A, out double B);
                 Console.WriteLine("A:{0}; B:{1}", A, B);
             }
             else Console.WriteLine("Input params is empty");
