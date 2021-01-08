@@ -81,14 +81,18 @@ namespace GPFD
                 A = (__sum_y - B * aX.Length) / __sum_x;
             }
         }
+
         public static void GetData(out double[] aDistance, out double[] aDelta, string aPath, string aSplit)
         {
             aDelta = aDistance = null;
+            string __temp_split;
 
             if (aPath != null)
             {
-                aDistance = _get_data(aPath, 0, aSplit);
-                aDelta  = _get_data(aPath, 1, aSplit);
+                if (aSplit.Contains("\\t")) __temp_split = "\t"; 
+                else __temp_split = aSplit;
+                aDistance = _get_data(aPath, 0, __temp_split);
+                aDelta    = _get_data(aPath, 1, __temp_split);
             }
         }
 
